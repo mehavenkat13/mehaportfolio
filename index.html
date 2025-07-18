@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Meha Venkat's Portfolio</h1>
+    <p>Welcome to my personal portfolio!</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#extra">Extracurricular</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introduction Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div style="text-align: center;">
+        <img src="photoooooo3.jpg" alt="Meha Venkat" style="width:250px; height:auto; margin-bottom: 20px;">
+    </div>
+    <p>Hello, I am Meha Venkat, a passionate and driven B.Tech Computer Science student currently studying at SRM Institute of Science and Technology, Ramapuram. I am fascinated by the ever-evolving world of technology and the impact it has on our daily lives. My academic journey has equipped me with a solid foundation in programming, software development, and problem-solving skills, which I continue to refine through hands-on projects and collaborative learning.
+    In addition to my technical skills, I have a strong interest in exploring innovative solutions that bridge the gap between technology and real-world applications. I am always eager to learn, take on new challenges, and contribute to projects that push the boundaries of what technology can achieve.</p>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <button id="resumeBtn">View Resume</button>
+    <iframe id="resumeViewer" style="display:none;" src="my cv.pdf" width="100%" height="500px"></iframe>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Programming Languages</h3>
+    <p>Java, Python, JavaScript, C++</p>
+    <h3>Technical Skills</h3>
+    <p>Web Development, Artificial Intelligence </p>
+    <h3>Soft Skills</h3>
+    <p>Leadership, Communication, Teamwork, Adaptability, Problem-solving</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Project 1: Website blocker <br><br> The website blocker project aims to help users manage their online distractions by blocking access to specified websites. This tool is particularly useful for students and professionals looking to improve productivity and maintain focus.</li>
+      <br>
+      <li>Project 2: Jumbled words quiz game with Morse code <br><br> The Jumbled Words Quiz Game aims to provide an engaging and educational experience by combining word unscrambling with Morse code. Players will challenge their vocabulary skills while also learning about Morse code, making it both entertaining and informative.</li>
+    </ul>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2>Certifications & Achievements</h2>
+    <ul>
+        <li><a href="certificate1 .jpg" target="_blank">Certification 1</a></li>
+        <li><a href="certificate 2 .png" target="_blank">Certification 2</a></li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>SCHOOLING:<br><br> Narayana E-Techno (11th and 12th)<br><br> UNDERGRADUATION (UG):<br><br> S.R.M. Institute Of Science Technology Ramapuram <br> 2nd year Computer Science Engineering <br> CGPA: 9.00 </p>
+  </section>
+
+  <!-- Extracurricular Section -->
+  <section id="extra">
+    <h2>Extracurricular Activities / Volunteering</h2>
+    <p>- Student Coordinator, National Service Scheme (NSS)<br>- Assisted in organizing symposium events ensuring smooth operations and successful participation.<br>- Member of Snug and Plug club<br>- CSI (Computer Society of India) member</p>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <button id="contactBtn">Contact Me</button>
+    
+    <!-- Hidden Form -->
+    <form id="contactForm" style="display:none; margin-top: 20px;">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Footer / Other Sections -->
+  <div class="stars"></div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('contactBtn').addEventListener('click', function() {
+      var form = document.getElementById('contactForm');
+      if (form.style.display === 'none') {
+        form.style.display = 'block';
+      } else {
+        form.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
+
